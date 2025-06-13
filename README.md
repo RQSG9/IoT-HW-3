@@ -62,3 +62,8 @@
 ### EX 7-2
  - Grade 생성자를 통해 유사 배열 객체를 생성하고, prototype을 빈 배열 []로 지정
  - 이를 통해 Grade의 인스턴스는 배열 메서드를 상속받아 사용할 수 있게 됨
+
+### EX 7-3
+ - 인스턴스 g의 length 프로퍼티를 삭제한 후 push 메서드를 호출하는 예제
+ - push는 this.length를 찾는데, g에 length가 없으므로 프로토타입 체인을 따라 Grade.prototype의 length인 0을 사용
+ - 결과적으로 this[0] = 70이 실행되어 기존의 값을 덮어쓰고 length는 1이 됨
