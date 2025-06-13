@@ -22,3 +22,8 @@
  - 다양한 데이터 타입의 constructor 프로퍼티를 NewConstructor로 변경하는 예제
  - number, string, boolean은 constructor 변경이 적용되지 않음
  - constructor 프로퍼티는 변경되지만, 데이터 타입이 변하는 것은 아니므로, instanceof 연산자는 여전히 false를 반환
+
+### EX 6-5
+ - 인스턴스를 통해 생성자 함수에 접근하는 다양한 방법을 보여주는 예제
+ - Object.getPrototypeOf(), __proto__, constructor 프로퍼티 등을 이용해 원본 생성자 함수에 접근하고, 새로운 인스턴스를 생성할 수 있음
+ - 모든 방식으로 생성된 객체는 Person의 인스턴스임이 확인됨
