@@ -81,3 +81,8 @@
  - Square 생성자에서 Rectangle의 로직을 재사용하려는 시도
  - Square 생성 시 height 프로퍼티에 width를 할당하여 getArea 메서드의 로직을 Rectangle과 동일하게 맞춤
  - 여전히 getArea 메서드는 Square.prototype에 중복 정의되어 있어 비효율적
+
+### EX 7-7
+ - 클래식 상속의 기본적인 두 가지 요소를 보여주는 예제
+ - 자식 클래스(Square)의 인스턴스에서 부모 생성자(Rectangle)를 호출하여 프로퍼티를 상속
+ - prototype을 부모의 인스턴스로 지정하여 프로토타입 체인 연결
