@@ -7,3 +7,8 @@
  - Person 생성자 함수를 정의하고, prototype 프로퍼티를 통해 getName 메서드를 추가
  - 인스턴스의 __proto__가 생성자 함수의 prototype을 참조
  - __proto__는 생략 가능한 프로퍼티
+
+### EX 6-2
+ - console.dir를 통해 생성자 함수, prototype, 인스턴스 사이의 관계를 보여주는 예제
+ - 배열 리터럴을 통해 생성된 instance의 __proto__가 Array.prototype을 참조하기 때문에, push, pop, forEach 등의 메서들를 호출하여 사용가능
+ - from과 isArray 같이 prototype 프로퍼티 내부에 있지 않은 메서드들은 인스턴스가 호출 불가능
