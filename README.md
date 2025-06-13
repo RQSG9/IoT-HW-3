@@ -90,3 +90,8 @@
 ### EX 7-8
  - new SuperClass()를 이용한 상속 구현 도우미 함수 extendClass1
  - 불필요한 Subclass prototype의 프로퍼티를 지우고 freeze
+
+### EX 7-8+
+ - 브릿지(Bridge) 생성자 함수를 활용해 상속을 직접 구현하는 예제
+ - 내용이 없는 Bridge 함수를 중간에 두어 프로토타입 체인을 연결
+ - 부모 생성자를 직접 호출하지 않고 프로토타입을 상속
