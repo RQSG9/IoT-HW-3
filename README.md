@@ -32,3 +32,8 @@
  - 메서드 오버라이드(Method Override)를 보여주는 예제
  - Person.prototype.getName에 메서드가 정의되어 있지만, iu 인스턴스에 동일한 이름의 getName 메서드를 직접 할당
  - 해당 객체가 직접 소유한 프로퍼티를 먼저 찾기 때문에 iu 인스턴스에 정의된 메서드가 호출
+
+### EX 6-7
+ - Array.prototype에 정의된 push 메서드를 호출
+ - Array.prototype역시 객체이므로 prototype 프로퍼티를 가지며 이는 Object.prototype을 참조
+ - hasOwnProperty 메서드는 프로토타입 체인을 따라 Object.prototype에서 호출
