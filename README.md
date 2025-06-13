@@ -52,3 +52,9 @@
  - 받은 인자들을 this의 인덱스 프로퍼티로 할당하고 length 프로퍼티를 설정하여, 유사 배열 객체(Array-like Object)를 생성
  - Grade의 prototype을 []로 설정하여 배열의 prototype을 참조할 수 있게 만듦
  - Grade의 인스턴스인 g에서 배열의 메서드 사용 가능
+
+## Chapter 7
+
+### EX 7-1
+ - 클래스(생성자 함수) 자체에 메서드를 정의하는 스태틱 메서드 예제
+ - isRectangle은 Rectangle 생성자 함수에 직접 할당된 스태틱 메서드이므로, 인스턴스에서 직접 호출할 수 없고 생성자 함수를 통해 호출해야 함
