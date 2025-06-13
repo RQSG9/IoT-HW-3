@@ -104,3 +104,8 @@
 ### EX 7-10
  - Object.create()를 이용한 효율적인 프로토타입 상속 방법
  - Square.prototype = Object.create(Rectangle.prototype) 코드를 통해 new 키워드나 브릿지 패턴 없이 Rectangle의 프로토타입을 직접 상속받음
+
+### EX 7-11
+ - SubClass.prototype을 다른 객체로 교체하면 constructor 프로퍼티가 부모 클래스의 것을 가리키게 됨
+ - SubClass.prototype.constructor = SubClass 코드를 통해 constructor가 자기 자신을 올바르게 가리키도록 복원
+ - 예제 7-8에서 constructor 복구기능 추가
