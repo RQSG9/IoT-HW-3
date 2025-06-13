@@ -49,7 +49,7 @@
 
 ### EX 6-10
  - Grade 생성자 함수는 arguments 객체를 활용하여 가변적인 수의 인자를 받아 처리
- - 받은 인자들을 this의 인덱스 프로퍼티로 할당하고 length 프로퍼티를 설정하여, 유사 배열 객체(Array-like Object)를 생성
+ - 받은 인자들을 this의 인덱스 프로퍼티로 할당하고 length 프로퍼티를 설정하여, 유사 배열 객체를 생성
  - Grade의 prototype을 []로 설정하여 배열의 prototype을 참조할 수 있게 만듦
  - Grade의 인스턴스인 g에서 배열의 메서드 사용 가능
 
@@ -67,3 +67,8 @@
  - 인스턴스 g의 length 프로퍼티를 삭제한 후 push 메서드를 호출하는 예제
  - push는 this.length를 찾는데, g에 length가 없으므로 프로토타입 체인을 따라 Grade.prototype의 length인 0을 사용
  - 결과적으로 this[0] = 70이 실행되어 기존의 값을 덮어쓰고 length는 1이 됨
+
+### EX 7-4
+ - EX 7-3과 달리 Grade.prototype이 ['a', 'b', 'c', 'd']로, length가 4인 배열인 경우
+ - 인스턴스 g의 length를 삭제하고 push를 호출하면, 프로토타입의 length인 4를 기준으로 동작
+ - this[4] = 70이 실행되고 length는 5가 되어 예상과 다른 결과가 나타남
