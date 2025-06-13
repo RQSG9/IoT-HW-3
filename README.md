@@ -25,5 +25,10 @@
 
 ### EX 6-5
  - 인스턴스를 통해 생성자 함수에 접근하는 다양한 방법을 보여주는 예제
- - Object.getPrototypeOf(), __proto__, constructor 프로퍼티 등을 이용해 원본 생성자 함수에 접근하고, 새로운 인스턴스를 생성할 수 있음
+ - Object.getPrototypeOf(), __proto__와 constructor 프로퍼티 등을 이용해 원본 생성자 함수에 접근하고, 새로운 인스턴스를 생성할 수 있음
  - 모든 방식으로 생성된 객체는 Person의 인스턴스임이 확인됨
+
+### EX 6-6
+ - 메서드 오버라이드(Method Override)를 보여주는 예제
+ - Person.prototype.getName에 메서드가 정의되어 있지만, iu 인스턴스에 동일한 이름의 getName 메서드를 직접 할당
+ - 해당 객체가 직접 소유한 프로퍼티를 먼저 찾기 때문에 iu 인스턴스에 정의된 메서드가 호출
