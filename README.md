@@ -41,3 +41,8 @@
 ### EX 6-8
  - 처음 arr.toString() 호출 시에는 Array.prototype.toString이 호출
  - arr 인스턴스에 toString 메서드를 직접 재정의하고 arr.toString() 호출 시에는 재정의된 메서드가 실행
+
+### EX 6-9
+ - Object.prototype에 getEntries라는 커스텀 메서드를 추가
+ - 객체를 대상으로만 사용할 의도로 만든 메서드 getEntries가 객체가 아닌 다른 데이터에서도 오류 없이 작동
+ - 프로토타입 체이닝을 통해 getEntries에 접근하게 된 것
