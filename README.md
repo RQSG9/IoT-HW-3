@@ -46,3 +46,9 @@
  - Object.prototype에 getEntries라는 커스텀 메서드를 추가
  - 객체를 대상으로만 사용할 의도로 만든 메서드 getEntries가 객체가 아닌 다른 데이터에서도 오류 없이 작동
  - 프로토타입 체이닝을 통해 getEntries에 접근하게 된 것
+
+### EX 6-10
+ - Grade 생성자 함수는 arguments 객체를 활용하여 가변적인 수의 인자를 받아 처리
+ - 받은 인자들을 this의 인덱스 프로퍼티로 할당하고 length 프로퍼티를 설정하여, 유사 배열 객체(Array-like Object)를 생성
+ - Grade의 prototype을 []로 설정하여 배열의 prototype을 참조할 수 있게 만듦
+ - Grade의 인스턴스인 g에서 배열의 메서드 사용 가능
