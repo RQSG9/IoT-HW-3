@@ -12,3 +12,8 @@
  - console.dir를 통해 생성자 함수, prototype, 인스턴스 사이의 관계를 보여주는 예제
  - 배열 리터럴을 통해 생성된 instance의 __proto__가 Array.prototype을 참조하기 때문에, push, pop, forEach 등의 메서들를 호출하여 사용가능
  - from과 isArray 같이 prototype 프로퍼티 내부에 있지 않은 메서드들은 인스턴스가 호출 불가능
+
+### EX 6-3
+ - 생성자 함수의 prototype 프로퍼티 내에 있는 constructor라는 프로퍼티는 생성자 함수 자신을 참조함
+ - 배열 인스턴스의 constructor 프로퍼티는 원본 Array 생성자 함수를 가리킴
+ - new arr.constructor(3, 4)와 같이 constructor를 통해서도 새로운 배열을 생성할 수 있음
