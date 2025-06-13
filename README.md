@@ -100,3 +100,7 @@
  - 브릿지 패턴을 이용해 상속을 구현하는 개선된 도우미 함수 extendClass2
  - 빈 생성자 함수인 Bridge를 중간에 두어 SuperClass의 생성자 호출 없이 prototype만을 연결
  - 불필요한 프로퍼티 상속을 방지하고 SuperClass 생성자 호출의 부작용을 막음
+
+### EX 7-10
+ - Object.create()를 이용한 효율적인 프로토타입 상속 방법
+ - Square.prototype = Object.create(Rectangle.prototype) 코드를 통해 new 키워드나 브릿지 패턴 없이 Rectangle의 프로토타입을 직접 상속받음
