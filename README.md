@@ -72,3 +72,7 @@
  - EX 7-3과 달리 Grade.prototype이 ['a', 'b', 'c', 'd']로, length가 4인 배열인 경우
  - 인스턴스 g의 length를 삭제하고 push를 호출하면, 프로토타입의 length인 4를 기준으로 동작
  - this[4] = 70이 실행되고 length는 5가 되어 예상과 다른 결과가 나타남
+
+### EX 7-5
+ - 상속의 필요성을 보여주는 예제
+ - Rectangle과 Square는 width, height, getArea 등에서 유사한 로직을 가지지만, 독립적으로 구현되어 있어 코드 중복이 발생
