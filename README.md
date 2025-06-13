@@ -76,3 +76,8 @@
 ### EX 7-5
  - 상속의 필요성을 보여주는 예제
  - Rectangle과 Square는 width, height, getArea 등에서 유사한 로직을 가지지만, 독립적으로 구현되어 있어 코드 중복이 발생
+
+### EX 7-6
+ - Square 생성자에서 Rectangle의 로직을 재사용하려는 시도
+ - Square 생성 시 height 프로퍼티에 width를 할당하여 getArea 메서드의 로직을 Rectangle과 동일하게 맞춤
+ - 여전히 getArea 메서드는 Square.prototype에 중복 정의되어 있어 비효율적
