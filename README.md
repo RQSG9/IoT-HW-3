@@ -86,3 +86,7 @@
  - 클래식 상속의 기본적인 두 가지 요소를 보여주는 예제
  - 자식 클래스(Square)의 인스턴스에서 부모 생성자(Rectangle)를 호출하여 프로퍼티를 상속
  - prototype을 부모의 인스턴스로 지정하여 프로토타입 체인 연결
+
+### EX 7-8
+ - new SuperClass()를 이용한 상속 구현 도우미 함수 extendClass1
+ - 불필요한 Subclass prototype의 프로퍼티를 지우고 freeze
