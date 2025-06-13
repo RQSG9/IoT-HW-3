@@ -37,3 +37,7 @@
  - Array.prototype에 정의된 push 메서드를 호출
  - Array.prototype역시 객체이므로 prototype 프로퍼티를 가지며 이는 Object.prototype을 참조
  - hasOwnProperty 메서드는 프로토타입 체인을 따라 Object.prototype에서 호출
+
+### EX 6-8
+ - 처음 arr.toString() 호출 시에는 Array.prototype.toString이 호출
+ - arr 인스턴스에 toString 메서드를 직접 재정의하고 arr.toString() 호출 시에는 재정의된 메서드가 실행
