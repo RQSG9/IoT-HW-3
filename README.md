@@ -1,5 +1,5 @@
-# 지능시스템 Homwork 3
-지능시스템 과제 3: chapter 6 ~ chapter 7의 모든 예제 github에 push하기
+# 사물인터넷 Homwork 3
+사물인터넷 과제 3: chapter 6 ~ chapter 7의 모든 예제 github에 push하기
 
 ## Chapter 6
 
